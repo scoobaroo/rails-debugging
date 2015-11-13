@@ -41,11 +41,11 @@ Pry can replace IRB as your ruby REPL of choice.
  # ... and so on
 
 [3] pry(main)> def say_hello
-[3] pry(main)*   puts 'helllo'
+[3] pry(main)*   puts 'helllllo'
 [3] pry(main)* end
 => :say_hello
 [4] pry(main)> say_hello
-helllo
+helllllo
 => nil
 ```
 Oops, that looks like an error.  I misspeeled 'hello'.
@@ -59,13 +59,14 @@ Visibility: public
 Number of lines: 3
 
 def say_hello
-  puts 'helllo'
+  puts 'helllllo'
 end
 ```
 Yep, that's wrong. I'd better edit that.
 ```ruby
 [7] pry(main)> edit say_hello
 ```
+At this point if you're following along one's editor would have popped up and I'd edit the method.  You can change the editor pry uses.
 
 
 Pry offers a lot more than just access to ruby methods though. 
@@ -134,11 +135,11 @@ Since pry is a debugger we ought to be able to use typical debugger commands lik
 ##### next
 - allow code in the current line to complete
 - stop at the next line in the same file (if possible)
-- You can think of `next` as staying at the same "level".
+- You can think of `next` as staying at the *same "level"*.
 
 ##### step 
 - step into the code as it executes
-- You can think of `step` as "going-deeper".
+- You can think of `step` as *"going-deeper"*.
 
 ```ruby
  arr.sort.uniq
@@ -158,11 +159,14 @@ break 10 if x > 3
 ### pry glossary
 
 A few commands you might make use of include
-- edit
-- cd 
-- ls
-- show-method
-- find-method
+- edit                   - edit a file or method
+- cd                     - change current scope
+- ls                     - list variables and methods
+- show-method            - display a method's code
+- find-method            - find all methods with this name
+- help                   - 
+- watch                  - print a message whenever a message changes
+- show-doc               - Show documentation for a specific method 
 
 
 ## better errors
