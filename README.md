@@ -66,7 +66,7 @@ Yep, that's wrong. I'd better edit that.
 ```ruby
 [7] pry(main)> edit say_hello
 ```
-At this point if you're following along one's editor would have popped up and I'd edit the method.  You can change the editor pry uses.
+At this point if you're following along you would see an editor pop up and you could edit the method.  You can change the editor pry uses.
 
 
 Pry offers a lot more than just access to ruby methods though. 
@@ -130,8 +130,10 @@ It'll also help if you [add a few shortcut commands](https://github.com/deivid-r
 
 ####  Debugging
 Since pry is a debugger we ought to be able to use typical debugger commands like:
+
 ##### continue 
 - continue program execution from where it stopped
+
 ##### next
 - allow code in the current line to complete
 - stop at the next line in the same file (if possible)
@@ -167,6 +169,7 @@ A few commands you might make use of include
 - help                   - 
 - watch                  - print a message whenever a message changes
 - show-doc               - Show documentation for a specific method 
+
 
 
 ## better errors
