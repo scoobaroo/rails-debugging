@@ -20,8 +20,7 @@ Select all that apply.
 
 1. `ls Cow`
 2. `edit Cow`
-3. ```
-    cd Cow
+3.  cd Cow
+
     ls
-```
 4. `pry.Cow`
