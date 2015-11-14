@@ -207,7 +207,7 @@ Just install the gem and run the `annotate` command in your terminal.
 gem 'annotate'
 ```
 
-Schema information will be added as comments to the top of each of your models.
+Schema information will be added as comments to the top of each of your models.  You should run `annotate` after each migration.
 ```
 # == Schema Information
 #
