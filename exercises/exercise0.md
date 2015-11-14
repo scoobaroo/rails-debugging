@@ -18,4 +18,4 @@ At this point pry should be working for you.
 
 # Check
 
-In your terminal run `pry` just like you would `irb`.  Try a few basic things you might do in `irb`.
+In your terminal run `pry` just like you would `irb`.  Try a few basic things you might do in `irb` or type `help`.

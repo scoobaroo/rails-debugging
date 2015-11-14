@@ -2,13 +2,12 @@
 
 ## Intro
 
-| Objectives                                 |
-| :----                                      |
-| Be able to use pry as a REPL               |
-| Be able to enter objects and make changes  |
-| Be able to use pry as a debugger           |
-| Be able to add pry-rails and better-errors |
-
+| Objectives                                       |
+| :----                                            |
+| Be able to use pry as a REPL                     |
+| Be able to enter objects and make changes        |
+| Be able to use pry as a debugger                 |
+| Be able to work with pry-rails and better-errors |
 
 
 ## pry as REPL
