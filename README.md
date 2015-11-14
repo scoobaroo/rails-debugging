@@ -137,15 +137,29 @@ It'll also help if you [add a few shortcut commands](https://github.com/deivid-r
 
 
 ##  Debugging
-Since pry is a debugger we ought to be able to use typical debugger commands like:
+Since pry is a debugger let's talk about a few debugger basics.  
+Most debuggers have something called a `breakpoint` which is the point at which execution of the code is paused and you're able to inspect the current state.  Some breakpoints are created by inserting a debugger command.  In rails that command is `debugger`, but once we install `pry` we'll use `binding-pry` instead.
+
+We can also use the debugger's `break` command to add more break-points.
+
+#### break
+- halt execution and debug at the specified line/condition
+
+```ruby
+break 10                      # stop at line 10
+break BooksController#index   # stop when #index is called
+break 10 if x > 3
+```
 
 ##### continue
 - continue program execution from where it stopped
+- exit the debugger (until another breakpoint is hit)
 
 #### next
 - allow code in the current line to complete
-- stop at the next line in the same file (if possible)
+- stop at the next line in the same file or level (if possible)
 - You can think of `next` as staying at the *same "level"*.
+- commands on the current line are completed, before you can use the debugger commands again.
 
 #### step
 - step into the code as it executes
@@ -157,14 +171,6 @@ Since pry is a debugger we ought to be able to use typical debugger commands lik
 ```
 - when paused on the above line `step` would show both the code in `sort` and in `uniq`.  `next` would just stop at the next `puts`
 
-#### break
-- halt execution and debug at the specified line/condition
-
-```ruby
-break 10                      # stop at line 10
-break BooksController#index   # stop when #index is called
-break 10 if x > 3
-```
 
 
 ## pry glossary
@@ -191,3 +197,30 @@ Better errors is a replacement for the rails error page that adds:
 * souce code inspection
 
 ![better errors](https://camo.githubusercontent.com/3fa6840d5e20236b4f768d6ed4b42421ba7c2f21/68747470733a2f2f692e696d6775722e636f6d2f367a42474141622e706e67)
+
+## annotate
+
+The annotate gem can make working with your models a little easier as it adds some automatic documentation.  
+
+Just install the gem and run the `annotate` command in your terminal.
+```bash
+gem 'annotate'
+```
+
+Schema information will be added as comments to the top of each of your models.
+```
+# == Schema Information
+#
+# Table name: books
+#
+#  id             :integer          not null, primary key
+#  title          :string
+#  year_published :integer
+#  author         :string
+#  available      :boolean
+#  genre          :string
+#  image_url      :string
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+```
