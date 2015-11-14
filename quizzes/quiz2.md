@@ -17,13 +17,13 @@ end
 ```
 
 Select all that apply.
-1) `ls Cow`
-2) `edit Cow`
-3) ```
+1. `ls Cow`
+2. `edit Cow`
+3. ```
     cd Cow
     ls
   ```
-4) `pry.Cow`
+4. `pry.Cow`
 
 
 
@@ -74,6 +74,7 @@ Solution:
 **Both 1 and 3** are correct.
 
 1) `ls Cow`
+
 
 3) ```
     cd Cow
