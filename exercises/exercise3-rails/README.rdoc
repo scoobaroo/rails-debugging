@@ -1,0 +1,10 @@
+# setup
+
+Run the following as per usual:
+
+```bash
+bundle
+rake db:create
+rake db:migrate
+rake db:seed
+```

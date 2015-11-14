@@ -1,0 +1,15 @@
+<div class="col-12">
+  <h1>Our Book Collection</h1>
+
+  <div class="well">
+    <% @books.each do |book| %>
+      <ul>
+        <li><%= link_to book.title, book%></li>
+      </ul>
+    <% end %>
+  </div>
+</>
+
+<div class="well">
+  <%= link_to "Add NewBook", new_book_path, class: 'btn btn-defaults' %>
+</div>
