@@ -7,7 +7,6 @@ def hello(name)
   puts "hello"
 end
 
-my_hash = { username: 'tgaff', email: 'tgaff@tgaff.com' }
 
 ```
 
