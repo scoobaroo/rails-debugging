@@ -89,13 +89,16 @@ Hash#methods:
 locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_
 
 ```
-#### Exercise 0 & 1
+#### Exercise 0 - 2
 * Follow along in exercise 0 to install and configure pry to use your favorite editor.  
-* Next move on to exercise 1 and fix `Cow#say_hello` method in pry.
+* Next learn about `cd` and `ls` in exercise1.
+* Next move on to exercise 2 and fix `Cow#say_hello` method in pry.
+
 
 ## Pry and Rails
 
-Pry can also be used to show or edit methods and classes in rails.
+That's enough about Pry's awesome REPLabilities.  
+You're all working on Rails projects these days so let's look at how you can use Pry in Rails.
 
 ```ruby
 [14] pry(#<Book>):2> b = Book.new
