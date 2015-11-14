@@ -8,9 +8,10 @@ Solution:
 1) ls Cow
 
 
-3)  cd Cow
-   
-    ls
+3)  
+  cd Cow
+  
+  ls
 
 
 
