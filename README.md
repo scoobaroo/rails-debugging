@@ -178,7 +178,7 @@ A few commands you might make use of include
 - show-method            - display a method's code
 - find-method            - find all methods with this name
 - help                   -
-- watch                  - print a message whenever a message changes
+- watch                  - print a message whenever a variable changes
 - show-doc               - Show documentation for a specific method
 
 
