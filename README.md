@@ -132,9 +132,9 @@ In order to get this working though you'll first need to do a few things.
 It'll also help if you [add a few shortcut commands](https://github.com/deivid-rodriguez/pry-byebug#matching-byebug-behaviour) so you don't have to type `continue`, `step` etc.
 
 
-##  Debugging
+##  Debugging with binding.pry
 Since pry is a debugger let's talk about a few debugger basics.  
-Most debuggers have something called a `breakpoint` which is the point at which execution of the code is paused and you're able to inspect the current state.  Some breakpoints are created by inserting a debugger command.  In rails that command is `debugger`, but once we install `pry` we'll use `binding-pry` instead.
+Most debuggers have something called a `breakpoint` which is the point at which execution of the code is paused and you're able to inspect the current state.  Some breakpoints are created by inserting a debugger command.  In rails that command is `debugger`, but once we install `pry` we'll use `binding.pry` instead.
 
 We can also use the debugger's `break` command to add more break-points.
 
