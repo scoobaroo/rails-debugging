@@ -177,7 +177,6 @@ A few commands you might make use of include
 - ls                     - list variables and methods
 - show-method            - display a method's code
 - find-method            - find all methods with this name
-- edit-method
 - help                   -
 - watch                  - print a message whenever a message changes
 - show-doc               - Show documentation for a specific method
