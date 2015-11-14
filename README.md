@@ -163,7 +163,7 @@ break 10 if x > 3
 
 [Quiz 4](quizzes/quiz4.md)
 
-##### continue
+#### continue
 - continue program execution from where it stopped
 - exit the debugger (until another breakpoint is hit)
 
