@@ -161,6 +161,8 @@ break BooksController#index   # stop when #index is called
 break 10 if x > 3
 ```
 
+[Quiz 4](quizzes/quiz4.md)
+
 ##### continue
 - continue program execution from where it stopped
 - exit the debugger (until another breakpoint is hit)
@@ -181,6 +183,7 @@ break 10 if x > 3
 ```
 - when paused on the above line `step` would show both the code in `sort` and in `uniq`.  `next` would just stop at the next `puts`
 
+[Quiz 5](quizzes/quiz5.md)
 
 
 ## pry glossary
