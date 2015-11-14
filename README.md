@@ -11,7 +11,7 @@
 
 
 
-## pry
+## pry as REPL
 
 Pry can replace IRB as your ruby REPL of choice.  
 
@@ -66,10 +66,14 @@ Yep, that's wrong. I'd better edit that.
 ```ruby
 [7] pry(main)> edit say_hello
 ```
+<<<<<<< HEAD
 At this point if you're following along you would see an editor pop up and you could edit the method.  You can change the editor pry uses.
+=======
+At this point if you're following along one's editor would have popped up and I'd edit the method.  You can change the editor pry uses; see exercise 0.
+>>>>>>> tweak flow
 
 
-Pry offers a lot more than just access to ruby methods though. 
+Pry offers a lot more than just easy access to ruby methods though.
 You can easily enter into objects and view or edit their internal methods using commands much like those you use in your terminal.
 ```ruby
 [13] pry(main)> cd Hash
@@ -85,11 +89,13 @@ Hash#methods:
 locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_
 
 ```
+#### Exercise 0 & 1
+* Follow along in exercise 0 to install and configure pry to use your favorite editor.  
+* Next move on to exercise 1 and fix `Cow#say_hello` method in pry.
 
+## Pry and Rails
 
-### with rails
-
-You can also show or edit methods and classes in rails.
+Pry can also be used to show or edit methods and classes in rails.
 
 ```ruby
 [14] pry(#<Book>):2> b = Book.new
@@ -119,7 +125,7 @@ BooksController#show
 
 ```
 
-In order to get this working though you'll need to do a few things.
+In order to get this working though you'll first need to do a few things.
 
 1. First add `pry-rails` and `pry-byebug` to your gemfile
 2. `bundle install`
@@ -128,18 +134,18 @@ In order to get this working though you'll need to do a few things.
 It'll also help if you [add a few shortcut commands](https://github.com/deivid-rodriguez/pry-byebug#matching-byebug-behaviour) so you don't have to type `continue`, `step` etc.
 
 
-####  Debugging
+##  Debugging
 Since pry is a debugger we ought to be able to use typical debugger commands like:
 
-##### continue 
+##### continue
 - continue program execution from where it stopped
 
-##### next
+#### next
 - allow code in the current line to complete
 - stop at the next line in the same file (if possible)
 - You can think of `next` as staying at the *same "level"*.
 
-##### step 
+#### step
 - step into the code as it executes
 - You can think of `step` as *"going-deeper"*.
 
@@ -148,17 +154,18 @@ Since pry is a debugger we ought to be able to use typical debugger commands lik
  puts arr
 ```
 - when paused on the above line `step` would show both the code in `sort` and in `uniq`.  `next` would just stop at the next `puts`
-  
-##### break
+
+#### break
 - halt execution and debug at the specified line/condition
+
 ```ruby
 break 10                      # stop at line 10
-break BooksController#index   # stop when #index is called 
+break BooksController#index   # stop when #index is called
 break 10 if x > 3
 ```
 
 
-### pry glossary
+## pry glossary
 
 A few commands you might make use of include
 - edit                   - edit a file or method
@@ -166,9 +173,10 @@ A few commands you might make use of include
 - ls                     - list variables and methods
 - show-method            - display a method's code
 - find-method            - find all methods with this name
-- help                   - 
+- edit-method
+- help                   -
 - watch                  - print a message whenever a message changes
-- show-doc               - Show documentation for a specific method 
+- show-doc               - Show documentation for a specific method
 
 
 
@@ -181,4 +189,3 @@ Better errors is a replacement for the rails error page that adds:
 * souce code inspection
 
 ![better errors](https://camo.githubusercontent.com/3fa6840d5e20236b4f768d6ed4b42421ba7c2f21/68747470733a2f2f692e696d6775722e636f6d2f367a42474141622e706e67)
-
