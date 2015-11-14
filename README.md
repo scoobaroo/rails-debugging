@@ -68,6 +68,10 @@ Yep, that's wrong. I'd better edit that.
 
 At this point if you're following along one's editor would have popped up and I'd edit the method.  You can change the editor pry uses; see exercise 0.
 
+[Quiz 1](quizzes/quiz1.md)
+
+
+
 Pry offers a lot more than just easy access to ruby methods though.
 You can easily enter into objects and view or edit their internal methods using commands much like those you use in your terminal.
 ```ruby
@@ -84,7 +88,12 @@ Hash#methods:
 locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_
 
 ```
+
+[Quiz 2](quizzes/quiz2.md)
+
+
 #### Exercise 0 - 2
+Fork and clone this repo, then:
 * Follow along in exercise 0 to install and configure pry to use your favorite editor.  
 * Next learn about `cd` and `ls` in exercise1.
 * Next move on to exercise 2 and fix `Cow#say_hello` method in pry.
@@ -93,7 +102,7 @@ locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_
 ## Pry and Rails
 
 That's enough about Pry's awesome REPLabilities.  
-You're all working on Rails projects these days so let's look at how you can use Pry in Rails.
+You've all been working on Rails projects these days so let's look at how you can use Pry in Rails.
 
 ```ruby
 [14] pry(#<Book>):2> b = Book.new
@@ -127,7 +136,12 @@ In order to get this working though you'll first need to do a few things.
 
 1. First add `pry-rails` and `pry-byebug` to your gemfile
 2. `bundle install`
-3. Now instead of using `debugger` in your ruby code to pause server-execution and debug, type `binding.pry`
+3. Now when you run `rails c` you'll get a pry console with all of Rails loaded.
+4. And instead of using `debugger` in your ruby code to pause server-execution and debug, type `binding.pry`
+
+[Quiz 3](quizzes/quiz3.md)
+
+
 
 It'll also help if you [add a few shortcut commands](https://github.com/deivid-rodriguez/pry-byebug#matching-byebug-behaviour) so you don't have to type `continue`, `step` etc.
 
