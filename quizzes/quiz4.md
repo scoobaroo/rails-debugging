@@ -1,5 +1,5 @@
 Assuming the following code:
-![code](assets/quiz4a.png)
+![code](../assets/quiz4a.png)
 
 **How could we use pry to set a breakpoint and start debugging on line 8?**
 

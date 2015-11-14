@@ -1,5 +1,5 @@
 Assuming the following code,
-![code](assets/quiz5a.png)
+![code](../assets/quiz5a.png)
 And assuming that we've stopped at line 8 right after `binding.pry`,
 
 **Which command would I use if I don't want to go-deeper and just want to stop again after line 8 is complete?**
