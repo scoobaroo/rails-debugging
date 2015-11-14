@@ -5,13 +5,15 @@ Solution:
 
 **Both 1 and 3** are correct.
 
-1) `ls Cow`
+1) ls Cow
 
 
-3) ```
-    cd Cow
+3)  cd Cow
+   
     ls
-  ```
+
+
+
 
 You could also try
 
