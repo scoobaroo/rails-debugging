@@ -23,5 +23,5 @@ Select all that apply.
 3. ```
     cd Cow
     ls
-  ```
+```
 4. `pry.Cow`
