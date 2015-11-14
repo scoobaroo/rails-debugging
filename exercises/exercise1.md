@@ -13,7 +13,7 @@ Use the method.
 
 3. Create a hash and save it as `my_hash`
 ```ruby
-my_hash = { name: 'tgaff', email: 'tgaff@tgaff.com' }
+my_hash = { username: 'tgaff', email: 'tgaff@tgaff.com' }
 ```
 
 Then explore your hash using the `cd` and `ls` commands.  Try to call some of the instance methods available to you such as `#keys`.

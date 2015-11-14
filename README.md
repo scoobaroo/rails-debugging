@@ -65,12 +65,8 @@ Yep, that's wrong. I'd better edit that.
 ```ruby
 [7] pry(main)> edit say_hello
 ```
-<<<<<<< HEAD
-At this point if you're following along you would see an editor pop up and you could edit the method.  You can change the editor pry uses.
-=======
-At this point if you're following along one's editor would have popped up and I'd edit the method.  You can change the editor pry uses; see exercise 0.
->>>>>>> tweak flow
 
+At this point if you're following along one's editor would have popped up and I'd edit the method.  You can change the editor pry uses; see exercise 0.
 
 Pry offers a lot more than just easy access to ruby methods though.
 You can easily enter into objects and view or edit their internal methods using commands much like those you use in your terminal.
