@@ -7,10 +7,10 @@ class BooksController < ApplicationController
   end
 
   def show
-    puts 'looking for book with'
-    puts params
-    binding.pry
-    @book = Book.find(params[:id])
+    @book = get_book
+    puts "We found book #{@book}"
+    puts "rendering show"
+    render 'show'
   end
 
   def new
@@ -59,6 +59,7 @@ class BooksController < ApplicationController
   end
 
   def get_book
-    Book.find(params[:id])
+    #Book.find(params[:id])
+    Book.first
   end
 end
