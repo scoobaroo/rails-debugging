@@ -1,6 +1,6 @@
 # Start by opening pry and requiring this file
 #   $ pry
-#   require './exercise1.rb'
+#   require './exercise2.rb'
 
 # if that went well you should be able to do:
 #   dude = Dude.new
