@@ -19,10 +19,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #Debugging & Test Suite
 group :development, :test do
+  gem 'pry-rails'
+  gem 'better_errors'
+  gem 'pry-byebug'
   gem 'byebug'
-#  gem 'pry-rails'
-#  gem 'pry-byebug'
-#  gem 'better_errors'
   gem 'binding_of_caller'
   gem 'annotate'
 end
