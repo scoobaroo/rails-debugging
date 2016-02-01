@@ -25,4 +25,8 @@ class Cow
   def say_hello
     puts "yo"
   end
+
+  def eat
+    puts 'nom nom'
+  end
 end

@@ -12,7 +12,11 @@ Next let's setup pry to use *your favorite editor*.
 Pry.config.editor = "vim"
 ```
 
-For example if you use `subl`: `Pry.config.editor = 'subl'`
+**Important**: If you use a GUI editor make sure you configure it to *wait*.  If you don't do this pry will not re-read the file and incorporate it's changes.
+
+For example if you use `subl`: `Pry.config.editor = 'subl -w'`
+For example if you use `atom`: `Pry.config.editor = 'atom -w'`
+
 
 At this point pry should be working for you.
 

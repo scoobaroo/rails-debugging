@@ -147,7 +147,7 @@ break BooksController#index   # stop when #index is called
 break 10 if x > 3
 ```
 
-##### continue
+#### continue
 - continue program execution from where it stopped
 - exit the debugger (until another breakpoint is hit)
 
@@ -165,7 +165,7 @@ break 10 if x > 3
  arr.sort.uniq
  puts arr
 ```
-- when paused on the above line `step` would show both the code in `sort` and in `uniq`.  `next` would just stop at the next `puts`
+- when paused on the above line `step` would show both the code in the `sort` and `uniq` methods.  On the otherhand, `next` would just stop at the next `puts`
 
 
 
