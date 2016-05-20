@@ -1,24 +1,25 @@
 # Pry Setup
-Let's first make sure you have pry:
+
+First, make sure you have pry:
 
 ```bash
 gem install pry
 ```
 
-Next let's setup pry to use *your favorite editor*.  
-1) open ~/.pryrc in your editor.  (create it if necessary: `touch ~/.pryrc`)
-2) add a line like below but replace `vim` with the command you use to start your favorite editor.
+Next, set up pry to use *your favorite editor*.  
+1) Open ~/.pryrc in your editor.  (create it if necessary: `touch ~/.pryrc`)
+2) Add a line to configure your editor. Replace `vim` with the command you use to start your favorite editor.
 ```bash
 Pry.config.editor = "vim"
 ```
 
-**Important**: If you use a GUI editor make sure you configure it to *wait*.  If you don't do this pry will not re-read the file and incorporate it's changes.
+**Important**: If you use a GUI editor, make sure you configure pry to *wait*.  If you don't do this pry will not re-read the file and incorporate it's changes.
 
 For example if you use `subl`: `Pry.config.editor = 'subl -w'`
 For example if you use `atom`: `Pry.config.editor = 'atom -w'`
 
 
-At this point pry should be working for you.
+At this point, pry should be working for you in the command line.
 
 # Check
 
